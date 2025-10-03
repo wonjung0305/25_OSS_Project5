@@ -10,6 +10,11 @@
   flex-direction: column;
 }
 
+body, #root{
+  background-color: #212121;
+  min-height: 100vh;
+}
+
 .main-header {
   font-family: 'Montserrat', sans-serif;
 }
@@ -25,6 +30,7 @@
   padding: 46px;
   border-radius: 10px;
   box-shadow: 0+0+32px white;
+
 }
 
 .ui.button {
@@ -46,4 +52,40 @@
 .ui.checkbox input:checked~label:after,
 .ui.form input:not([type]) {
   color: #fff !important;
+}
+
+/* select도 색깔 통일 시켜야 함*/
+.create-form select,
+.create-form input{
+  background: #ffffff17 !important;
+  color: whitesmoke !important;
+  
+  padding: 0.6rem 1em !important;
+}
+
+/* select option 색깔 색상*/
+.create-form select option{
+  background-color: #212121;
+}
+
+/* update는 드롭다운으로 되어있음*/
+.ui.dropdown{
+  background: #ffffff17 !important;
+  color: whitesmoke !important;
+}
+
+.ui.dropdown .text{
+  color: whitesmoke !important;
+}
+
+.ui.dropdown .menu .item.selected{
+  color: whitesmoke !important;
+}
+.ui.dropdown .menu .item{
+  background-color: #212121 !important;
+  color: whitesmoke !important;
+}
+
+.ui.dropdown .menu .item:hover{
+  background-color: blue !important;
 }
